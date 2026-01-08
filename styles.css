@@ -309,6 +309,10 @@ body {
     border-radius: 2rem;
     background-color: var(--accent-colour);
     position: absolute;
+    border: 0.4rem solid transparent;
+}
+.project:hover {
+    border-color:  var(--text-colour);
 }
 #project1 {
     rotate: 0deg;
