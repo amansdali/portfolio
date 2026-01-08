@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-CA" data-theme="light">
+<html lang="en-CA" data-theme="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,69 +8,179 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Gamja+Flower&family=JetBrains+Mono:wght@400;700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Gamja+Flower&family=JetBrains+Mono:wght@400;800&display=swap"
               rel="stylesheet">
 
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
+    <!-- NAVBAR -->
+    <nav class="navbar row-flex">
+        <div class="nav-left">
+            <a href="https://amansdali.github.io/">
+                <div class="homepage-link">
+                    <svg class="quack" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M45 90C69.8528 90 90 69.8528 90 45C90 20.1472 69.8528 0 45 0C20.1472 0 0 20.1472 0 45C0 69.8528 20.1472 90 45 90ZM20.9189 68.8378C18.8786 73.9386 19.4595 77.8378 19.9459 79.7838C20.5388 82.1554 64.0703 87.1225 66.4054 84.5928C69.3243 81.4306 70.7838 78.5676 72.2432 72.2432C73.281 67.7462 76.1351 57.1622 70.7838 54.7297C68.1265 53.5219 68.1081 55.345 60.5676 56.6757C55.4595 57.5771 56.2831 57.5401 45 57.1622C38.8328 56.9556 33.3243 57.4054 28.4595 58.8649C24.7027 59.9919 22.3784 65.1892 20.9189 68.8378Z" class="icon-secondary"/>
+                        <path d="M19.9459 79.7838C19.4595 77.8378 18.8786 73.9386 20.9189 68.8378C22.3784 65.1892 24.7027 59.9919 28.4595 58.8649C33.3243 57.4054 38.8328 56.9556 45 57.1622C56.2831 57.5401 55.4595 57.5771 60.5676 56.6757C68.1081 55.345 68.1265 53.5219 70.7838 54.7297C76.1351 57.1622 73.281 67.7462 72.2432 72.2432C70.7838 78.5676 69.3243 81.4306 66.4054 84.5928C64.0703 87.1225 20.5388 82.1554 19.9459 79.7838Z" class="icon-primary"/>
+                        <path d="M67.6217 76.6216C71.0271 86.3514 58.5683 90 45 90C31.4317 90 16.5406 83.9189 20.4325 75.8919C24.3244 67.8649 31.4317 61.7838 45 61.7838C58.5683 61.7838 64.2163 66.8919 67.6217 76.6216Z" class="icon-primary"/>
+                        <circle cx="37.9459" cy="49.1351" r="16.0541" class="icon-primary"/>
+                        <path d="M22.1351 49.1351C20.1892 50.3513 14.0109 51.3243 14.5946 54.2432C15.081 56.6757 20.6757 58.3784 25.2973 58.3784L22.1351 49.1351Z" class="icon-primary"/>
+                        <path d="M33.5676 48.8919C33.5676 50.6383 32.9329 52.0541 31.3784 52.0541C29.8239 52.0541 29.1892 50.6383 29.1892 48.8919C29.1892 47.1455 29.8239 45.7297 31.3784 45.7297C32.9329 45.7297 33.5676 47.1455 33.5676 48.8919Z" class="icon-secondary"/>
+                    </svg>
+                    <h3 class="header-link">
+                        &nbsp&nbspamansdali
+                    </h3>
+                </div>
+            </a>
+            <h3 class="header-4">
+                /portfolio
+            </h3>
+        </div>
+        <div class="nav-right">
+            <a href="https://amansdali.github.io/portfolio/">
+                <p class="body">
+                    portfolio
+                </p>
+            </a>
+            <a href="https://amansdali.github.io/me/">
+                <p class="body">
+                    personal
+                </p>
+            </a>
+            <a href="#contact-section">
+                <p class="body">
+                    contact
+                </p>
+            </a>
+            <h1>&nbsp</h1>
+            <svg class="sun" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="13.3103" cy="13.0291" rx="5.5" ry="6" stroke-width="2" class="icon-secondary"/>
+                <path d="M21.053 19.1184L24.3103 22.0291" stroke-width="2" class="icon-primary"/>
+                <path d="M6.91277 20.4629L4.3103 24.0291" stroke-width="2" class="icon-primary"/>
+                <path d="M23.3103 3.02908L20.5339 6.11561" stroke-width="2" class="icon-primary"/>
+                <path d="M14.3583 22.7077L14.8103 27.0291" stroke-width="2" class="icon-primary"/>
+                <path d="M13.7761 1.52588e-05L13.7761 4.02908" stroke-width="2" class="icon-primary"/>
+                <path d="M-1.27772e-05 13.0036L4.3103 13.0036" stroke-width="2" class="icon-primary"/>
+                <path d="M23.2897 13.0036L27.3102 13.0036" stroke-width="2" class="icon-primary"/>
+                <path d="M4.16748 2.81546L6.8103 6.02908" stroke-width="2" class="icon-primary"/>
+                <line x1="8.44777" y1="12.4527" x2="17.4527" y2="11.5522" stroke-linecap="round" class="icon-primary"/>
+                <path d="M12.4999 12.5L9 12.5C9.5 14 10 14.5888 10.9999 14.5C11.8404 14.4254 12.4999 13.5 12.4999 12.5Z" class="icon-primary"/>
+                <path d="M17.4999 12.3082L14 12.3082C14.5 13.8082 15 14.3969 15.9999 14.3082C16.8404 14.2336 17.4999 13.3082 17.4999 12.3082Z" class="icon-primary"/>
+                <path d="M12 16C12 16 12.6529 16.5 13.5 16.5C14.3471 16.5 15 16 15 16" stroke-linecap="round" class="icon-primary"/>
+            </svg>
+            <svg class="moon" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.8837 4.51223C30.1802 8.39789 31.6209 16.0437 25.3034 19.7955C20.4901 22.6541 14.4768 22.3764 13.4236 17.2432C16.2426 17.4744 18.4145 16.9431 19.6162 15.2679C20.8179 13.5927 21.5865 10.9553 20.46 9.30644C19.3335 7.65756 15.7579 6.08291 12.394 7.56953C12.1419 2.59358 22.3895 -0.785003 26.8837 4.51223Z" stroke-width="2" class="icon-primary"/>
+                <path d="M6.29407 8L7.41664 11.4549H11.0493L8.11042 13.5902L9.23299 17.0451L6.29407 14.9098L3.35514 17.0451L4.47771 13.5902L1.53878 11.4549H5.1715L6.29407 8Z" class="icon-primary"/>
+            </svg>
+        </div>
+    </nav>
     <div class="container">
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <div class="nav-left">
-                <a href="https://amansdali.github.io/">
-                    <div class="homepage-link">
-                        <svg class="quack" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M45 90C69.8528 90 90 69.8528 90 45C90 20.1472 69.8528 0 45 0C20.1472 0 0 20.1472 0 45C0 69.8528 20.1472 90 45 90ZM20.9189 68.8378C18.8786 73.9386 19.4595 77.8378 19.9459 79.7838C20.5388 82.1554 64.0703 87.1225 66.4054 84.5928C69.3243 81.4306 70.7838 78.5676 72.2432 72.2432C73.281 67.7462 76.1351 57.1622 70.7838 54.7297C68.1265 53.5219 68.1081 55.345 60.5676 56.6757C55.4595 57.5771 56.2831 57.5401 45 57.1622C38.8328 56.9556 33.3243 57.4054 28.4595 58.8649C24.7027 59.9919 22.3784 65.1892 20.9189 68.8378Z" class="icon-secondary"/>
-                            <path d="M19.9459 79.7838C19.4595 77.8378 18.8786 73.9386 20.9189 68.8378C22.3784 65.1892 24.7027 59.9919 28.4595 58.8649C33.3243 57.4054 38.8328 56.9556 45 57.1622C56.2831 57.5401 55.4595 57.5771 60.5676 56.6757C68.1081 55.345 68.1265 53.5219 70.7838 54.7297C76.1351 57.1622 73.281 67.7462 72.2432 72.2432C70.7838 78.5676 69.3243 81.4306 66.4054 84.5928C64.0703 87.1225 20.5388 82.1554 19.9459 79.7838Z" class="icon-primary"/>
-                            <path d="M67.6217 76.6216C71.0271 86.3514 58.5683 90 45 90C31.4317 90 16.5406 83.9189 20.4325 75.8919C24.3244 67.8649 31.4317 61.7838 45 61.7838C58.5683 61.7838 64.2163 66.8919 67.6217 76.6216Z" class="icon-primary"/>
-                            <circle cx="37.9459" cy="49.1351" r="16.0541" class="icon-primary"/>
-                            <path d="M22.1351 49.1351C20.1892 50.3513 14.0109 51.3243 14.5946 54.2432C15.081 56.6757 20.6757 58.3784 25.2973 58.3784L22.1351 49.1351Z" class="icon-primary"/>
-                            <path d="M33.5676 48.8919C33.5676 50.6383 32.9329 52.0541 31.3784 52.0541C29.8239 52.0541 29.1892 50.6383 29.1892 48.8919C29.1892 47.1455 29.8239 45.7297 31.3784 45.7297C32.9329 45.7297 33.5676 47.1455 33.5676 48.8919Z" class="icon-secondary"/>
-                        </svg>
-                        <h3 class="header-link">
-                            &nbsp&nbspamansdali
-                        </h3>
-                    </div>
-                </a>
-                <h3 class="header-4">
-                    /portfolio
-                </h3>
-            </div>
-            <div class="nav-right">
-                <a href="https://amansdali.github.io/portfolio/">
-                    <p class="body">
-                        portfolio
-                    </p>
-                </a>
-                <a href="https://amansdali.github.io/me/">
-                    <p class="body">
-                        personal
-                    </p>
-                </a>
-                <a href="#contact-section">
-                    <p class="body">
-                        contact
-                    </p>
-                </a>
-            </div>
-        </nav>
-
         <!-- MAIN CONTENT -->
         <main id="main-content">
+            <div style="height: 6rem;"></div>
             <!-- HERO -->
             <section id="hero-section">
                 <h1 class="header-1">amanda li</h1>
+                <div>
+                    <p class="code">
+                        > initializing system...<br>
+                        > loading problem-solving modules...<br>
+                        > analyzing patterns, edge cases, and constraints...<br>
+                        > blending logic with creativity...<br>
+                        <br>
+                        > system online.<br>
+                    </p>
+                    <p class="code-bold">
+                        <br>
+                        > hello, world<br><br><br>
+                    </p>
+                </div>
+                <svg class="arrow" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4.24264" y1="4" x2="29" y2="28.7574"  stroke-width="6" stroke-linecap="round"/>
+                    <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 29)" stroke-width="6" stroke-linecap="round"/>
+                    <line x1="4.24264" y1="25" x2="29" y2="49.7574" stroke-width="6" stroke-linecap="round"/>
+                    <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 50)" stroke-width="6" stroke-linecap="round"/>
+                </svg>
             </section>
+            <div style="height: 15rem;"></div>
+
             <!-- ABOUT -->
-            <section id="about-section"></section>
+            <section id="about-section">
+                <h2 class="header-2">about me</h2>
+                <p  class="body-small">
+                    Welcome to my portfolio website! (which is currently a work in progress)<br><br>
+                    I am a second year student at the University of Toronto, pursuing a computer science specialist
+                    and statistics major.<br><br>
+                    I am passionate about learning new skills to bring innovative ideas to life, combining logic and
+                    creativity to build software that is interesting, useful, and fun.<br><br>
+                    Continue scrolling down to learn more about my skills, projects, and contact information, or click
+                    on the icon in the top-left corner to visit the home page of my personal website (which is also
+                    currently a work in progress).
+                </p>
+            </section>
+            <div style="height: 30rem;"></div>
+
             <!-- SKILLS -->
-            <section id="skills-section"></section>
+            <section id="skills-section">
+                <h2 class="header-2">my skills</h2>
+                <p class="body-small-bold">
+                    Languages & Tools:
+                </p>
+                <p  class="body-small">
+                    Python, Java, Assembly, HTML/CSS/JS, R, Git, Github, Figma
+                </p>
+                <p class="body-small-bold">
+                    Other:
+                </p>
+                <p  class="body-small">
+                    Problem-solving, teamwork/collaboration, communication, organization, leadership,
+                    creativity, passion
+                </p>
+            </section>
+            <div style="height: 30rem;"></div>
+
             <!-- PROJECTS -->
-            <section id="projects-section"></section>
+            <section id="projects-section">
+                <h2 class="header-2">projects</h2>
+                <p class="body">here are a few of my projects <br></p>
+                <div id="projects-container">
+                    <!-- add projects here -->
+                    <div style="height: 30rem;"></div>
+                </div>
+                <div class="row-flex">
+                    <p class="body">see more at:&nbsp&nbsp</p>
+                    <a href="https://github.com/amansdali">
+                        <p class="link-text">github.com/amansdali</p>
+                    </a>
+                </div>
+            </section>
+            <div style="height: 30rem;"></div>
+
             <!-- CONTACT -->
-            <section id="contact-section"></section>
+            <section id="contact-section">
+                <h2 class="header-2">contact me</h2>
+                <p class="body">feel free to reach out to me at</p>
+                <div class="row-flex">
+                    <p class="body">email:&nbsp&nbsp</p>
+                    <a href="amandaj.li@mail.utoronto.ca">
+                        <p class="link-text">amandaj.li@mail.utoronto.ca</p>
+                    </a>
+                </div>
+                <div class="row-flex">
+                    <p class="body">linkedin:&nbsp&nbsp</p>
+                    <a href="https://www.linkedin.com/in/amanda-jianing-li/">
+                        <p class="link-text">linkedin.com/in/amanda-jianing-li</p>
+                    </a>
+                </div>
+                <div class="row-flex">
+                    <p class="body">phone:&nbsp&nbsp</p>
+                    <a href="tel:4165587720">
+                        <p class="link-text">416-558-7720</p>
+                    </a>
+                </div>
+            </section>
+            <div style="height: 2rem;"></div>
         </main>
     </div>
     </body>

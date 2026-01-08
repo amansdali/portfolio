@@ -3,6 +3,8 @@
     --background-colour: #eeeeee;
     --text-colour: #444444;
     --accent-colour: #e5b3b5;
+    --accent-colour-2: #c59698;
+    --transparent-colour: #eeeeee60;
 }
 
 /* DARK MODE */
@@ -10,6 +12,8 @@
     --background-colour: #444444;
     --text-colour: #eeeeee;
     --accent-colour: #FFC6C6;
+    --accent-colour-2: #ffeeee;
+    --transparent-colour: #44444460;
 }
 
 /* RESET STUFF */
@@ -33,7 +37,7 @@ body {
 
 /* MAKE A MORE NARROW CONTAINER FOR THE CONTENT */
 .container {
-    width: clamp(300px, 67%, 1200px);
+    width: clamp(300px, 60%, 1000px);
     margin-inline: auto;
     padding: 1rem 1rem;
 }
@@ -52,7 +56,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: var(--accent-colour);
 }
 .header-3 {
@@ -60,7 +64,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--accent-colour);
 }
 .header-4 {
@@ -68,7 +72,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--text-colour);
 }
 .code {
@@ -76,22 +80,22 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--text-colour);
 }
 .code-bold {
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--accent-colour);
 }
 .link-text {
     font-family: "Gamja Flower", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     color: var(--accent-colour);
     text-decoration: none;
 }
@@ -100,7 +104,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--text-colour);
 }
 .body-bold {
@@ -108,7 +112,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--text-colour);
 }
 .body-small {
@@ -116,7 +120,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.75rem;
+    font-size: 1.1rem;
     color: var(--text-colour);
 }
 .body-small-bold {
@@ -124,16 +128,29 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 0.75rem;
+    font-size: 1.1rem;
     color: var(--text-colour);
+}
+
+/* OTHER USEFUL COMPONENTS */
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* NAVIGATION BAR (AT THE TOP) */
 .navbar {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: clamp(300px, 60%, 1000px);
+    margin-inline: auto;
+    padding: 1rem 1rem;
+    background-color: var(--transparent-colour);
+    backdrop-filter: blur(10px);
 }
 /* LEFT SIDE OF NAV BAR */
 .nav-left {
@@ -160,7 +177,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--text-colour);
 }
 .homepage-link:hover .quack .icon-secondary{
@@ -177,11 +194,95 @@ body {
     text-align: center;
 }
 .nav-right a{
-    background-color: var(--background-colour);
+    background-color: transparent;
     padding: 0.5rem;
     border-radius: 0.4rem;
     transition: background-color 0.6s ease;
 }
 .nav-right a:hover {
     background-color: var(--accent-colour);
+}
+.sun {
+    width: clamp(1.25rem, 2.25vw, 2.5rem);
+    height: clamp(1.25rem, 2.25vw, 2.5rem);
+}
+.sun .icon-secondary {
+    stroke: var(--text-colour);
+}
+.sun .icon-primary {
+    fill: var(--text-colour);
+    stroke: var(--text-colour);
+}
+.sun:hover .icon-secondary {
+    stroke: var(--accent-colour);
+}
+.sun:hover .icon-primary {
+    stroke: var(--accent-colour);
+    fill: var(--accent-colour);
+}
+.moon {
+    width: clamp(1.25rem, 2.25vw, 2.5rem);
+    height: clamp(1.25rem, 2.25vw, 2.5rem);
+}
+.moon .icon-primary {
+    stroke: var(--text-colour);
+}
+.moon:hover .icon-primary {
+    stroke: var(--accent-colour);
+}
+
+/* HERO SECTION */
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.arrow {
+    width: clamp(2rem, 7.9vw, 4.5rem);
+    height: clamp(2rem, 7.9vw, 4.5rem);
+}
+.arrow line{
+    stroke:  var(--text-colour);
+}
+.arrow:hover line{
+    stroke:  var(--accent-colour);
+}
+
+/* ABOUT SECTION */
+#about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* SKILLS SECTION */
+#skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* PROJECTS SECTION */
+#projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#projects-container {
+    width: 100%;
+    height: 30rem;
+    background-color: var(--accent-colour);
+}
+
+/* CONTACT SECTION */
+#contact-section {
+    gap: 1rem;
 }
