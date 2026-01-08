@@ -1,0 +1,187 @@
+/* LIGHT MODE (DEFAULT) */
+:root {
+    --background-colour: #eeeeee;
+    --text-colour: #444444;
+    --accent-colour: #e5b3b5;
+}
+
+/* DARK MODE */
+[data-theme="dark"] {
+    --background-colour: #444444;
+    --text-colour: #eeeeee;
+    --accent-colour: #FFC6C6;
+}
+
+/* RESET STUFF */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* SET SCROLL BEHAVIOUR AND FONT_SIZE FOR REM */
+html {
+    scroll-behavior: smooth;
+    font-size: clamp(14px, 2.34vw, 16px);
+}
+
+/* BACKGROUND COLOUR */
+body {
+    background-color: var(--background-colour);
+}
+
+/* MAKE A MORE NARROW CONTAINER FOR THE CONTENT */
+.container {
+    width: clamp(300px, 67%, 1200px);
+    margin-inline: auto;
+    padding: 1rem 1rem;
+}
+
+/* TEXT STYLES */
+.header-1 {
+    font-family: 'Gamja Flower', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12rem;
+    color: var(--accent-colour);
+    text-align: center;
+}
+.header-2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--accent-colour);
+}
+.header-3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--accent-colour);
+}
+.header-4 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--text-colour);
+}
+.code {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--text-colour);
+}
+.code-bold {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--accent-colour);
+}
+.link-text {
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: var(--accent-colour);
+    text-decoration: none;
+}
+.body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--text-colour);
+}
+.body-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--text-colour);
+}
+.body-small {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
+    color: var(--text-colour);
+}
+.body-small-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.75rem;
+    color: var(--text-colour);
+}
+
+/* NAVIGATION BAR (AT THE TOP) */
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* LEFT SIDE OF NAV BAR */
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.homepage-link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.quack {
+    width: clamp(1.5rem, 3.5vw, 3rem);
+    height: clamp(1.5rem, 3.5vw, 3rem);
+}
+.quack .icon-primary {
+    fill: var(--background-colour);
+}
+.quack .icon-secondary {
+    fill: var(--text-colour); }
+.header-link {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--text-colour);
+}
+.homepage-link:hover .quack .icon-secondary{
+    fill: var(--accent-colour);
+}
+.homepage-link:hover .header-link {
+    color: var(--accent-colour);
+}
+/* RIGHT SIDE OF NAV BAR */
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.nav-right a{
+    background-color: var(--background-colour);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.6s ease;
+}
+.nav-right a:hover {
+    background-color: var(--accent-colour);
+}
