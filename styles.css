@@ -131,6 +131,22 @@ body {
     font-size: 1.1rem;
     color: var(--text-colour);
 }
+.body-small-oppclr {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: var(--background-colour);
+}
+.body-small-bold-oppclr {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: var(--background-colour);
+}
 
 /* OTHER USEFUL COMPONENTS */
 .row-flex {
@@ -151,6 +167,7 @@ body {
     padding: 1rem 1rem;
     background-color: var(--transparent-colour);
     backdrop-filter: blur(10px);
+    z-index: 9999;
 }
 /* LEFT SIDE OF NAV BAR */
 .nav-left {
@@ -277,9 +294,51 @@ body {
     gap: 1rem;
 }
 #projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
     width: 100%;
-    height: 30rem;
+    height: 80%;
+    position: relative;
+}
+.project {
+    padding: 1rem;
+    width: 30%;
+    border-radius: 2rem;
     background-color: var(--accent-colour);
+    position: absolute;
+}
+#project1 {
+    rotate: 0deg;
+    top: 0%;
+    left: 0%;
+}
+#project2 {
+    rotate: 10deg;
+    top: 0%;
+    left: 35%;
+}
+#project3 {
+    rotate: -10deg;
+    top: 0%;
+    left: 70%;
+}
+#project4 {
+    rotate: -10deg;
+    top: 50%;
+    left: 0%;
+}
+#project5 {
+    rotate: 0deg;
+    top: 50%;
+    left: 35%;
+}
+#project6 {
+    rotate: -5deg;
+    top: 50%;
+    left: 70%;
 }
 
 /* CONTACT SECTION */
