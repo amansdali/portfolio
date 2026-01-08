@@ -131,20 +131,20 @@ body {
     font-size: 1.1rem;
     color: var(--text-colour);
 }
-.body-small-oppclr {
+.body-smaller {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1rem;
+    font-size: 0.75rem;
     color: var(--background-colour);
 }
-.body-small-bold-oppclr {
+.body-smaller-bold {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.1rem;
+    font-size: 0.75rem;
     color: var(--background-colour);
 }
 
@@ -300,19 +300,21 @@ body {
     align-items: flex-start;
     gap: 1rem;
     width: 100%;
-    height: 80%;
+    height: 100%;
     position: relative;
 }
 .project {
     padding: 1rem;
-    width: 30%;
-    border-radius: 2rem;
+    width: 35%;
+    border-radius: 1rem;
     background-color: var(--accent-colour);
     position: absolute;
     border: 0.4rem solid transparent;
+    z-index: 998;
 }
 .project:hover {
     border-color:  var(--text-colour);
+    z-index: 999;
 }
 #project1 {
     rotate: 0deg;
@@ -331,17 +333,17 @@ body {
 }
 #project4 {
     rotate: -10deg;
-    top: 50%;
+    top: 45%;
     left: 0%;
 }
 #project5 {
     rotate: 0deg;
-    top: 50%;
+    top: 45%;
     left: 35%;
 }
 #project6 {
     rotate: -5deg;
-    top: 50%;
+    top: 45%;
     left: 70%;
 }
 
