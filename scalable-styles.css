@@ -49,9 +49,9 @@ body {
 
 /* MAKE A MORE NARROW CONTAINER FOR THE CONTENT */
 .container {
-    width: 832px;
+    width: min(832px, 92%);
     margin-inline: auto;
-    padding: 16px 16px;
+    padding: clamp(0.75rem, 2vw, 1.5rem); /* ~12px - 24px */
 }
 
 /* TEXT STYLES */
@@ -59,7 +59,7 @@ body {
     font-family: 'Gamja Flower', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 192px;
+    font-size: clamp(6rem, 12vw, 12rem); /* scales between ~96px and 192px */
     color: var(--accent-colour);
     text-align: center;
 }
@@ -68,7 +68,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 36px;
+    font-size: clamp(1.5rem, 2.2vw, 2.25rem); /* ~24px - 36px */
     color: var(--accent-colour);
 }
 .header-3 {
@@ -76,7 +76,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 28px;
+    font-size: clamp(1.25rem, 1.8vw, 1.75rem); /* ~20px - 28px */
     color: var(--accent-colour);
 }
 .header-4 {
@@ -84,7 +84,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 28px;
+    font-size: clamp(1.25rem, 1.8vw, 1.75rem);
     color: var(--text-colour);
 }
 .code {
@@ -92,7 +92,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: clamp(1rem, 1.2vw, 1.25rem); /* ~16px - 20px */
     color: var(--text-colour);
 }
 .code-bold {
@@ -100,14 +100,14 @@ body {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 20px;
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
     color: var(--accent-colour);
 }
 .link-text {
     font-family: "Gamja Flower", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 28px;
+    font-size: clamp(1.25rem, 1.8vw, 1.75rem);
     color: var(--accent-colour);
     text-decoration: none;
 }
@@ -116,7 +116,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
     color: var(--text-colour);
 }
 .body-bold {
@@ -124,7 +124,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 20px;
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
     color: var(--text-colour);
 }
 .body-small {
@@ -132,7 +132,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: clamp(0.9rem, 1vw, 1.125rem); /* ~14.4px - 18px */
     color: var(--text-colour);
 }
 .body-small-bold {
@@ -140,7 +140,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 18px;
+    font-size: clamp(0.9rem, 1vw, 1.125rem);
     color: var(--text-colour);
 }
 .body-smaller {
@@ -148,7 +148,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 0.8vw, 0.875rem); /* ~12px - 14px */
     color: var(--background-colour);
 }
 .body-smaller-bold {
@@ -156,7 +156,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 0.8vw, 0.875rem);
     color: var(--background-colour);
 }
 
@@ -186,9 +186,9 @@ body {
     z-index: 9999;
 }
 .navbar {
-    width: 832px;
+    width: min(832px, 92%);
     margin-inline: auto;
-    padding: 16px 16px;
+    padding: clamp(0.5rem, 1.8vw, 1.25rem); /* ~8px - 20px */
 }
 /* LEFT SIDE OF NAV BAR */
 .nav-left {
@@ -204,7 +204,7 @@ body {
     flex-wrap: wrap;
 }
 .quack {
-    width: 32px;
+    width: clamp(1rem, 3vw, 2.5rem); /* ~16px - 40px */
     height: auto;
 }
 .quack .icon-primary {
@@ -244,8 +244,8 @@ body {
     background-color: var(--accent-colour);
 }
 #sun, #moon {
-    width: 32px;
-    height: 32px;
+    width: clamp(1.25rem, 3.2vw, 2.5rem); /* ~20px - 40px */
+    height: auto;
     cursor: pointer;
 }
 #sun .icon-secondary {
@@ -275,12 +275,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: clamp(0.5rem, 1.6vw, 1.5rem); /* ~8px - 24px */
     flex-wrap: wrap;
 }
 .arrow {
-    width: 64px;
-    height: 64px;
+    width: clamp(2.5rem, 6vw, 5rem); /* ~40px - 80px */
+    height: auto;
 }
 .arrow line{
     stroke:  var(--text-colour);
@@ -315,7 +315,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 16px;
+    gap: clamp(0.75rem, 1.6vw, 1.5rem);
     flex-wrap: wrap;
 }
 #projects-container {
@@ -323,21 +323,28 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 16px;
-    width: 800px;
-    height: 600px;
+    --project-gap: clamp(0.25rem, 1vw, 0.75rem);
+    gap: var(--project-gap);
+    width: min(800px, 100%);
+    height: auto;
     position: relative;
     flex-wrap: wrap;
 }
+
 .project {
-    padding: 16px;
-    width: 256px;
-    border-radius: 16px;
+    padding: clamp(0.25rem, 0.6vw, 0.5rem); /* ~4px - 8px */
+
+    /* clamp min-width, flex, max-width*/
+    width: clamp(11rem,
+                 calc((100% - 2 * var(--project-gap)) / 3),
+                 calc((min(800px, 100%) - 2 * var(--project-gap)) / 3));
+    border-radius: clamp(0.5rem, 1.6vw, 1rem); /* ~8px - 16px */
     background-color: var(--accent-colour);
-    border: 6px solid transparent;
+    border: solid clamp(0.1875rem, 0.6vw, 0.5rem) transparent; /* ~3px - 8px */
     z-index: 998;
     transition: rotate 0.6s ease;
 }
+
 .project:hover {
     border-color:  var(--text-colour);
     z-index: 999;
@@ -381,5 +388,5 @@ body {
 
 /* CONTACT SECTION */
 #contact-section {
-    gap: 16px;
+    gap: clamp(0.5rem, 1.6vw, 1.5rem);
 }
