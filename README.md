@@ -1,6 +1,4 @@
-# portfolio
-Personal portfolio
+https://amansdali.github.io/portfolio/
 
-to-do:
-    > javascript features: scrolling animations, toggle light/dark mode, add animations, 
-    > other: fix visibility issues, test and debug, learn react and other new frameworks
+# portfolio
+Personal portfolio made using html, css, and javascript

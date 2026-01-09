@@ -228,6 +228,13 @@ body {
 .homepage-link:hover .header-link {
     color: var(--accent-colour);
 }
+.navbar-username::after {
+    content: "";
+}
+.navbar-username:hover::after {
+    content: ".github.io";
+    color: var(--accent-colour);
+}
 /* RIGHT SIDE OF NAV BAR */
 .nav-right {
     display: flex;
@@ -252,10 +259,12 @@ body {
 }
 #sun .icon-secondary {
     stroke: var(--text-colour);
+    transition: stroke 0.6s ease;
 }
 #sun .icon-primary {
     fill: var(--text-colour);
     stroke: var(--text-colour);
+    transition: fill 0.6s ease, stroke 0.6s ease;
 }
 #sun:hover .icon-secondary {
     stroke: var(--accent-colour);
@@ -266,6 +275,7 @@ body {
 }
 #moon .icon-primary {
     stroke: var(--text-colour);
+    transition: stroke 0.6s ease;
 }
 #moon:hover .icon-primary {
     stroke: var(--accent-colour);
