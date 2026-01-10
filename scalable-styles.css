@@ -64,6 +64,7 @@ body {
     font-size: clamp(6rem, 12vw, 12rem); /* scales between ~96px and 192px */
     color: var(--accent-colour);
     text-align: center;
+
 }
 .header-2 {
     font-family: "Inter", sans-serif;
@@ -289,15 +290,84 @@ body {
     align-items: center;
     gap: clamp(0.5rem, 1.6vw, 1.5rem); /* ~8px - 24px */
     flex-wrap: wrap;
+    animation: appear-animation 1s forwards ease;
 }
-.arrow {
+
+@keyframes appear-animation {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 2rem)
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(0px, 0px)
+    }
+}
+.typewriter-container {
+    display: inline-block;
+}
+.typewriter-text {
+    overflow: hidden;
+    animation: typingAnimation 2s steps(14, end) forwards, blink 1s step-end infinite;
+    animation-delay: 1s, 3s;
+    white-space: nowrap;
+    border-right: 0.2rem solid transparent;
+    width: 0;
+}
+@keyframes typingAnimation {
+    0% {
+        width: 0;
+        border-color: var(--accent-colour);
+    }
+    100% {
+        width: 100%;
+        border-color: var(--accent-colour);
+    }
+}
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--accent-colour);
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+.large-arrow-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.large-arrow {
     width: clamp(2.5rem, 6vw, 5rem); /* ~40px - 80px */
     height: auto;
+    cursor: pointer;
 }
-.arrow line{
+.large-arrow line{
     stroke:  var(--text-colour);
 }
-.arrow:hover line{
+.large-arrow:hover line{
+    stroke:  var(--accent-colour);
+}
+
+.small-arrow-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.small-arrow {
+    width: clamp(1.25rem, 3vw, 2.5rem); /* ~20px - 40px */
+    height: auto;
+    cursor: pointer;
+}
+.small-arrow line{
+    stroke:  var(--text-colour);
+}
+.small-arrow:hover line{
     stroke:  var(--accent-colour);
 }
 
