@@ -470,7 +470,21 @@ body {
 #project6:hover {
     rotate: -15deg;
 }
-
+#artwork-container {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.art {
+    object-fit: cover;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    scroll-snap-align: center;
+}
 /* CONTACT SECTION */
 #contact-section {
     gap: clamp(0.5rem, 1.6vw, 1.5rem);
