@@ -1,11 +1,11 @@
 /* LIGHT MODE (DEFAULT) */
 :root {
-    --background-colour: #eeeeee;
+    --background-colour: #FBFBFB;
     --text-colour: #444444;
-    --accent-colour: #c59698;
+    --accent-colour: #BB8080;
     --accent-colour-2: #e5b3b5;
-    --transparent-colour: #eeeeee60;
-    --transparent-accent-colour: #c5969880;
+    --transparent-colour: #FBFBFB60;
+    --transparent-accent-colour: #BB808060;
 }
 [data-theme="light"] #sun {
     display: block;
