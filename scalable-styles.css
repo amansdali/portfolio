@@ -2,10 +2,10 @@
 :root {
     --background-colour: #eeeeee;
     --text-colour: #444444;
-    --accent-colour: #e5b3b5;
-    --accent-colour-2: #c59698;
+    --accent-colour: #c59698;
+    --accent-colour-2: #e5b3b5;
     --transparent-colour: #eeeeee60;
-    --transparent-accent-colour: #e5b3b580;
+    --transparent-accent-colour: #c5969880;
 }
 [data-theme="light"] #sun {
     display: block;
@@ -61,7 +61,7 @@ body {
     font-family: 'Gamja Flower', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(6rem, 12vw, 12rem); /* scales between ~96px and 192px */
+    font-size: clamp(4rem, 8vw, 8rem); /* scales between 4rem (≈64px) and 8rem (≈128px) */
     color: var(--accent-colour);
     text-align: center;
 
@@ -79,7 +79,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: clamp(1.25rem, 1.8vw, 1.75rem); /* ~20px - 28px */
+    font-size: clamp(1.125rem, 1.6vw, 1.5rem);
     color: var(--accent-colour);
 }
 .header-4 {
@@ -87,7 +87,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: clamp(1.25rem, 1.8vw, 1.75rem);
+    font-size: clamp(1.125rem, 1.6vw, 1.5rem);
     color: var(--text-colour);
 }
 .code {
@@ -223,7 +223,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 28px;
+    font-size: clamp(1.125rem, 1.6vw, 1.5rem);
     color: var(--text-colour);
 }
 .homepage-link:hover .quack .icon-secondary{
